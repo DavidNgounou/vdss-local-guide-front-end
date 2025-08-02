@@ -1,0 +1,16 @@
+.tool-tip{
+  display: flex;
+  padding: 1rem;
+  box-sizing: content-box;
+  gap: 0.55rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5em;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 0.8rem;
+  background-color: var(--faint-primary-color);
+  width: fit-content;
+  margin-bottom: 1em;
+
+}

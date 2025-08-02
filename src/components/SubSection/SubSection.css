@@ -1,0 +1,13 @@
+.sub-section{
+    width: 100%;
+    margin: 1rem 0rem;
+}
+
+.sub-section hr{
+    margin-top: 2em;
+}
+
+.sub-section p{
+    font-size: 1rem;
+    font-weight: 500;
+}

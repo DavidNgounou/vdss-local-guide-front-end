@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Inter;
+}
+
+:root{
+
+  --external-padding: 1.2rem;
+  --primary-color: #4285F4;
+  --primary-color-hover: rgba(148, 188, 253, 0.329);
+  --primary-color-active: #4285f480;
+  --primary-color-hover-text: ;
+  --faint-primary-color: #4286f421;
+  --very-faint-primary-color: #4286f415;
+
+}
+body{
+  background-color: #f5f5f5;
+  padding: 1.7rem;
+  display: flex;
+  flex-direction: column;
+}
+.full-screen-div {
+  width: 100vw;
+  height: 100vh;
+}
+#root{
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.9em;
+  height: 100%;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: var(--external-padding)
+}
+
+
+#user-login{
+  display: flex;
+  padding: 0.625rem;
+  align-items: center;
+  border-radius: 0.9em;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  height: 4.3125rem;
+  width: 14.0625rem;
+  font-size: 0.75rem;
+}
+#user-login:hover{
+  cursor: pointer;
+  background-color: #f0f0f0;
+  transition: all 0.3s ease-in-out;
+}
+#user-login:active{
+  background-color: #e0e0e0;
+  transition: all 0.3s ease-in-out;
+}
+#user-login:focus{
+  outline: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+#user-login img{
+  clip-path: circle();
+  object-fit: cover;
+  padding-right: 0.625rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+}
+
+#user-details{
+  display: flex;
+  flex-direction: column;
+}
+
+#user-details span{
+  font-weight: bold;
+}
+
+#user-details p{
+  color: #888;
+}
+
+
+.section-title{
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: var(--external-padding);
+}
+
+#speed-control-section{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  height: 100%;
+  position: relative;
+  z-index: 1; /* Lower z-index than the Select component */
+}
+#map{
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0.9em;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-right: var(--external-padding);
+}
+
+.tab-buttons{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  margin-bottom: var(--external-padding);
+}
+
+.section-tab-button{
+  height: 3rem;
+  width: 100%;
+  border-radius: 0.3em;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--faint-primary-color);
+  color: var(--primary-color);
+  font-weight: bold;
+  column-gap: 10px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+
+  /* *{
+    } */
+  }
+  
+  
+  .section-tab-button:hover{
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    transition: all 0.3s ease-in-out;
+
+  svg{
+    path{
+      fill: white;
+    }
+  }
+}
+.section-tab-button.active{
+  background-color: #4285F4;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.tab-title{
+  font-size: 1rem;
+  display: flex;
+  color: #333;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  justify-content: center;
+  width: fit-content;
+  text-align: center;
+  background-color: none;
+  border: none;
+}
+
+button.tab-title-with-line{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  text-align: left;
+  background-color: unset;
+  border: none;
+}
+.tab-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tab-title-with-line{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.tab-title-with-line .line{
+  width: 100%;
+  height: 0.2rem;
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
+}
+
+
+
+.sub-tab-section-menu{
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-tab-section-menu .tab-title-with-line{
+  
+  .line{
+    background-color: var(--faint-primary-color);
+    transition: all 0.3s ease-in-out;
+  }
+}
+.sub-tab-section-menu .tab-title-with-line:hover{
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+  font-size: 0.7rem;
+
+  .line{
+    background-color: var(--primary-color);
+    width: 100%;
+  }
+}
+.sub-tab-section-menu .tab-title-with-line:active{
+  .line{
+    width: 105%;
+    background-color: var(--primary-color);
+  }
+}
+.sub-tab-section-menu .tab-title-with-line:focus{
+  .line{
+    width: 105%;
+    background-color: var(--primary-color);
+  }
+}
+.sub-tab-section-menu .tab-title-with-line.active{
+
+  .line{
+    width: 100%;
+  }
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 0.5em;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+
+.submit-buttons{
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.submit-buttons button{
+  box-sizing: content-box;
+  padding: 0.5em 1em;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 0.3em;
+  color: white;
+  font-weight: 600;
+}
+
+.submit-buttons button:hover{
+  cursor: pointer;
+}
+
+
+
+/* Ensure the Leaflet map does not block the dropdown */
+#speed-control-section {
+  position: relative;
+  z-index: 1; /* Lower z-index than the Select component */
+}
+
+.leaflet-container {
+  z-index: 0; /* Ensure the map is behind other elements */
+}
+
+
+#region{
+  padding: 1em;;
+  border: 1px solid var(--primary-color);
+  width: 20rem;
+  border-radius: 0.5em;
+}
+
+#region-input{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: var(--external-padding);
+}
+
+#region-input label{
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+

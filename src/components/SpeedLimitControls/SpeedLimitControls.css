@@ -1,0 +1,7 @@
+#speed-limit-controls{
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
