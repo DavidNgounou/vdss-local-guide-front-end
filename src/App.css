@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*{
+    font-family: Inter;
+    transition: 0.3s ease;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0px 0px 42px #4285f43d;
+    width: 45em;
+    height: 32em;
+    padding: 2em;
+    text-align: center;
+}
+
+
+.login-card h2 {
+    font-size: 23.18px; 
+    color: #000; 
+    margin-bottom: 10px;
+    height: 28px;
+}
+
+.login-card p {
+    font-size: 19.32px;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.role-selection {
+    display: flex;
+    justify-content: space-evenly;
+    /* gap: 79.21px;  */
+    gap: 10px;
+    align-items: center;
+}
+
+.role-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 8px;
+    padding: 20px;
+    width: 200px;  */
+    width: auto;
+    height: auto;
+    gap: 1em;
+}
+
+.role-option p {
+    font-size: 1em;
+    font-weight: 19.32;
+    color: #000;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.login-button {
+    background-color: #4285f4;
+    color: #ffffff;
+    padding: 14.49px 14.49px;
+    border: none;
+    border-radius: 9.66px;
+    width: 176.77;
+    height: 43.47;
+    cursor: pointer;
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-top: 5px;
+    transition: 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #0056b3; 
+}
+
+.barre {
+    height: 345.83;
+    border-right: 3px solid #4285f4;
+    font-weight: 3.86px;
+}
+
+/* style pour le login officer */
+
+.login-form-card {
+    background-color: #ffffff;
+    border: none;
+    width: 45em;
+    height: fit-content;
+    padding: 2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-header h2 {
+    font-size: 23.18px;
+    color: #000;
+    margin: 1.7em 0em;
+    height: 28px;
+}
+
+.login-header p {
+    font-size: 19.32px;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.login-form {
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"] {
+    width: 100%;
+    /* height: 100%; */
+    padding: 15px 15px; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    outline: none;
+}
+
+.input-group input[type="text"]:focus,
+.input-group input[type="password"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.input-group label {
+    position: absolute;
+    left: 15px; 
+    top: 5px;
+    transform: translateY(15px); 
+    font-size: 12px;
+    font-weight: 600;
+    color: #000; 
+    pointer-events: none; 
+    white-space: nowrap;
+    background-color: transparent;
+    opacity: 0;
+    padding: 0 4px; 
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1; 
+}
+
+.input-group.has-label-active label {
+    opacity: 1;
+    /* font-size: 16px;  */
+    /* color: #000; */
+    transform: translateY(0); 
+    /* padding: 0 4px;  */
+    background-color: #ffffff; 
+    left: 12px; 
+}
+
+.input-wrapper.has-label-active input {
+    padding-top: 25px; 
+    padding-bottom: 12px; 
+}
+
+.input-group input::placeholder {
+    color: #000;
+    opacity: 1;
+    transition: opacity 0.3s ease; 
+}
+
+.input-group.has-label-active input::placeholder {
+    opacity: 0; 
+}
+
+.login-submit-button {
+    background-color: #4285f4;
+    color: #ffffff;
+    padding: 14.49px 14.49px;
+    border: none;
+    border-radius: 9.66px;
+    width:348;
+    height: 46;
+    font-size: 0.8em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1px;
+}
+
+.login-submit-button:hover {
+    background-color: #0056b3; 
+}
+
+.login-form p {
+    font-size: 0.8em;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+}
+
+.forgot-password {
+    color: #4285f4;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.forgot-password:hover {
+    text-decoration: underline; 
+}
+
+.error-message{
+  color: red !important;
+  background-color: rgba(255, 0, 0, 0.103);
+  padding: 1em;
+  border-radius: 0.5em;
+}
+
+.success-message{
+  color: green !important;
+  background-color: rgba(0, 255, 42, 0.103);
+  padding: 1em;
+  border-radius: 0.5em;
+}
