@@ -1,0 +1,25 @@
+.fade-button {
+    background-color: var(--very-faint-primary-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+    width: fit-content;
+}
+
+.fade-button:hover{
+    background-color: var(--primary-color-hover);
+    color: var(--primary-color);
+}
+.fade-button.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+.fade-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--primary-color);
+}

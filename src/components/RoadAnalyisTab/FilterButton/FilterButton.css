@@ -1,0 +1,25 @@
+.filter-button{
+    padding: 1em;
+    border: none;
+    border-radius: 0.3rem;
+    font-weight: 600;
+    border: 2px solid #6eca35;
+    color: #4e8f26;
+    transition: all 0.3s ease-in-out;
+}
+.filter-button:hover{
+    background-color: #6eca35a2;
+    color: white;
+    cursor: pointer;
+}
+.filter-button.active{
+    background-color: #6eca35;
+    color: white;
+    padding: 0.6rem 1rem;
+}
+.filter-button:focus{
+    outline: none;
+    color: white;
+    background-color: #6eca35a2;
+    padding: 1.2em;
+}
